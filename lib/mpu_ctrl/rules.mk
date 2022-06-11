@@ -1,0 +1,6 @@
+LOCAL_DIR := $(GET_LOCAL_DIR)
+
+ifeq ($(MTK_ENABLE_MPU_HAL_SUPPORT), yes)
+OBJS += $(LOCAL_DIR)/mpu_smc.o
+INCLUDES += -I$(LOCAL_DIR)/
+endif
